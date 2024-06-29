@@ -54,23 +54,4 @@ function LinkTree() {
   );
 }
 
-// ORIGINAL
-// function LinkTree() {
-//   return (
-//     <div className='flex flex-col'>
-//       {Object.entries(links).map(([name, url]) => (
-//         <a
-//           key={name}
-//           href={url}
-//           target='_blank'
-//           rel='noopener noreferrer'
-//           className='text-sm bg-grey rounded-md font-bold p-3 m-2 no-underline'
-//         >
-//           <button className='w-full h-full'>{name}</button>
-//         </a>
-//       ))}
-//     </div>
-//   );
-// }
-
 export default App;
