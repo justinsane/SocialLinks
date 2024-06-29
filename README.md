@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/social-links-profile-react-and-tailwind-css-rcxKRBGuBX)
 - [Live Site URL](https://social-links-ten-ebon.vercel.app/)
 
 ## My process
