@@ -9,5 +9,5 @@ body {
 }
 
 a:hover {
-  @apply bg-green text-black;
+  @apply bg-green text-black rounded-md;
 }

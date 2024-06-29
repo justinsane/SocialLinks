@@ -10,10 +10,10 @@ const links = {
 
 function App() {
   return (
-    <div className='sm:mx-auto mx-6 max-w-sm bg-dark-grey mt-32 rounded-xl p-6'>
+    <main className='sm:mx-auto mx-6 max-w-sm bg-dark-grey mt-32 rounded-xl p-6'>
       <TopHalf />
       <LinkTree />
-    </div>
+    </main>
   );
 }
 
@@ -38,19 +38,23 @@ function TopHalf() {
 
 function LinkTree() {
   return (
-    <div className='flex flex-col'>
+    <ul className='flex flex-col' role='list'>
       {Object.entries(links).map(([name, url]) => (
-        <a
+        <li
           key={name}
-          href={url}
-          target='_blank'
-          rel='noopener noreferrer'
-          className='text-center w-full h-full text-sm bg-grey rounded-md font-bold p-3 m-2 no-underline'
+          className='text-center w-full h-full text-sm bg-grey rounded-md font-bold m-2 no-underline'
         >
-          {name}
-        </a>
+          <a
+            href={url}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='block w-full h-full p-3'
+          >
+            {name}
+          </a>
+        </li>
       ))}
-    </div>
+    </ul>
   );
 }
 
